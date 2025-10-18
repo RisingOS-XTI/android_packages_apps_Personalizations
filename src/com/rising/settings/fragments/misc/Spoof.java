@@ -59,7 +59,7 @@ public class Spoof extends BasePreferenceFragment {
     private ActivityResultLauncher<Intent> pifJsonFilePickerLauncher;
 
     public Spoof() {
-        super(R.xml.spoofing);
+        super(R.xml.rising_settings_spoofing);
     }
 
     @Override

@@ -53,6 +53,14 @@
             app:position="middle"
             android:dependency="persist.sys.pixelprops.gms"/>
 
+        <!-- Keybox Data -->
+        <com.rising.settings.preferences.KeyboxDataPreference
+            android:key="keybox_data_setting"
+            android:title="@string/keybox_data_title"
+            android:summary="@string/keybox_data_summary"
+            app:position="middle"
+            android:defaultValue=""/>
+
         <!-- Unlimited google photos storage -->
         <com.rising.settings.preferences.SystemPropertySwitchPreference
             android:key="persist.sys.pixelprops.gphotos"
@@ -69,13 +77,27 @@
             app:position="middle"
             android:defaultValue="false" />
 
-        <!-- Keybox Data -->
-        <com.rising.settings.preferences.KeyboxDataPreference
-            android:key="keybox_data_setting"
-            android:title="@string/keybox_data_title"
-            android:summary="@string/keybox_data_summary"
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
+            android:key="cache_cleaner_enabled"
+            android:title="@string/cache_cleaner_title"
+            android:summary="@string/cache_cleaner_summary"
+            android:defaultValue="false"
+            app:position="middle" />
+
+        <!-- Unlimit screenrecord -->
+        <com.rising.settings.preferences.SystemSettingSwitchPreference
+            android:key="unlimit_screenrecord"
+            android:title="@string/miscellaneous_unlimit_screenrecord_title"
+            android:summary="@string/miscellaneous_unlimit_screenrecord_summary"
+            app:position="middle"
+            android:defaultValue="false" />
+
+        <com.rising.settings.preferences.GlobalSettingSwitchPreference
+            android:key="pm_downgrade_allowed"
+            android:title="@string/miscellaneous_app_downgrade_title"
+            android:summary="@string/miscellaneous_app_downgrade_summary"
             app:position="bottom"
-            android:defaultValue=""/>
+            android:defaultValue="false" />
 
      </PreferenceCategory>
      

@@ -23,36 +23,28 @@
             android:order="-996"
             app:lottie_rawRes="@raw/personalizations_illustration"/>
             
-        <!-- About -->
+        <!--- UserInterface -->
         <com.rising.settings.preferences.AdaptivePreference
-            android:icon="@drawable/ic_settings_about"
-            android:title="@string/about_settings_title"
-            android:summary="@string/about_settings_summary"
-            android:fragment="com.rising.settings.fragments.About"
-            app:position="top" />
+            android:icon="@drawable/ic_color_bucket"
+            android:title="@string/ui_title"
+            android:summary="@string/ui_settings_summary"
+            android:fragment="com.rising.settings.fragments.UserInterface"
+            app:position="top" /> 
 
-      <!-- Lockscreen -->
+        <!-- Spoofing -->
         <com.rising.settings.preferences.AdaptivePreference
-            android:icon="@drawable/ic_settings_lockscreens"
-            android:title="@string/lockscreen_title"
-            android:summary="@string/lockscreen_settings_summary"
-            android:fragment="com.rising.settings.fragments.LockScreen"
-            app:position="middle" />
-            
-        <!-- Misc -->
-        <com.rising.settings.preferences.AdaptivePreference
-            android:icon="@drawable/ic_settings_miscs"
-            android:title="@string/misc_title"
-            android:summary="@string/misc_settings_summary"
-            android:fragment="com.rising.settings.fragments.Miscellaneous"
+            android:icon="@drawable/ic_spoofing"
+            android:title="@string/spoofing_title"
+            android:summary="@string/spoofing_summary"
+            android:fragment="com.rising.settings.fragments.misc.Spoof"
             app:position="middle" />
 
-        <!-- Notifications -->
+       <!-- Statusbar -->   
         <com.rising.settings.preferences.AdaptivePreference
-            android:icon="@drawable/ic_dashboard_notifications"
-            android:title="@string/notifications_title"
-            android:summary="@string/notif_settings_summary"
-            android:fragment="com.rising.settings.fragments.Notifications"
+            android:icon="@drawable/ic_settings_statusbar"
+            android:title="@string/statusbar_title"
+            android:summary="@string/sb_settings_summary"
+            android:fragment="com.rising.settings.fragments.StatusBar"
             app:position="middle" />
 
         <!-- QuickSettings  -->
@@ -64,6 +56,22 @@
             android:fragment="com.rising.settings.fragments.QsLayoutSettings"
             app:position="middle" />
 
+        <!-- Notifications -->
+        <com.rising.settings.preferences.AdaptivePreference
+            android:icon="@drawable/ic_dashboard_notifications"
+            android:title="@string/notifications_title"
+            android:summary="@string/notif_settings_summary"
+            android:fragment="com.rising.settings.fragments.Notifications"
+            app:position="middle" />
+
+        <!-- Lockscreen -->
+        <com.rising.settings.preferences.AdaptivePreference
+            android:icon="@drawable/ic_settings_lockscreens"
+            android:title="@string/lockscreen_title"
+            android:summary="@string/lockscreen_settings_summary"
+            android:fragment="com.rising.settings.fragments.LockScreen"
+            app:position="middle" />
+
         <!-- Sound -->
         <com.rising.settings.preferences.AdaptivePreference
             android:icon="@drawable/ic_cellphone_sound"
@@ -72,20 +80,12 @@
             android:fragment="com.rising.settings.fragments.Sound"
             app:position="middle" />    
 
-       <!-- Statusbar -->   
+        <!-- Misc -->
         <com.rising.settings.preferences.AdaptivePreference
-            android:icon="@drawable/ic_settings_statusbar"
-            android:title="@string/statusbar_title"
-            android:summary="@string/sb_settings_summary"
-            android:fragment="com.rising.settings.fragments.StatusBar"
-            app:position="middle" />
- 
-        <!--- UserInterface -->
-        <com.rising.settings.preferences.AdaptivePreference
-            android:icon="@drawable/ic_color_bucket"
-            android:title="@string/ui_title"
-            android:summary="@string/ui_settings_summary"
-            android:fragment="com.rising.settings.fragments.UserInterface"
-            app:position="bottom" /> 
+            android:icon="@drawable/ic_settings_miscs"
+            android:title="@string/misc_title"
+            android:summary="@string/misc_settings_summary"
+            android:fragment="com.rising.settings.fragments.Miscellaneous"
+            app:position="bottom" />
 
 </PreferenceScreen> 

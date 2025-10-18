@@ -36,7 +36,8 @@
     <string name="ui_title">User Interface</string>
 
     <!-- Personalization Sub-Categories -->
-    <string name="spoofing_title">Spoofing</string>
+    <string name="spoofing_title">Personal</string>
+    <string name="misc_spoof_settings_title">Personal features</string>
     <string name="misc_general_settings_title">Miscellaneous general settings</string>
     <string name="misc_device_settings_title">Device settings</string>
     <string name="misc_other_settings_title">Other miscellaneous settings</string>
@@ -78,24 +79,9 @@
     <string name="changelog_rising_summary">View changes in the ROM installed</string>
     <string name="changelog_rising_error">Unable to load changelog</string>
 
-    <!-- About -->
-    <string name="about_rising">About RisingOS</string>
-    <string name="about_device_name">Device</string>
-    <string name="what_is_risingOS">What is RisingOS?</string>
-    <string name="what_is_risingOS_summary">Rising is an organization that maintains risingOS - a opensource android operating system that aims to bring the necessary system modifications while being neat, stable and fast. Highly inspired by OxygenOS (10-11) and NothingOS.</string>
-    <string name="what_is_riseui">What is Rise UI?</string>
-    <string name="what_is_riseui_summary">Rise UI is the user interface skin name of risingOS.</string>
-    <string name="ricing_terminology">So What is Rice / Ricing?</string>
-    <string name="ricing_terminology_summary">The term \'rising\' is used to describe a person\'s unix desktop where \'ricing\' is an act where someone customizes their desktop such as the changing icons, panels or system interface.\nsource: https://jie-fang.github.io/blog/basics-of-ricing</string>
-    <string name="what_happened_to_old_source">What happened to the old RisingOS?</string>
-    <string name="what_happened_to_old_source_summary">Old RisingOS organization got disbanded due to internal conflicts such as making the source private, server rent funds and source management (multiple people were using minaripenguin\'s account for anonymity). The new RisingOSOSS org is now solely maintained by a single source maintainer and distributed officially by official device maintainers.</string>
-    <string name="difference_official_version">What is the difference between COMMUNITY and OFFICIAL versions?</string>
-    <string name="difference_official_version_summary">COMMUNITY and OFFICIAL versions offers the same amount of features, OFFICIAL versions supports official OTAs straight from official risingOSS organization. Compared to COMMUNITY builds, we always prioritize issues reported and feature requests from OFFICIAL maintainers.</string>
-    <string name="rising_redirects">Know more about RisingOS!</string>
-
    <!-- rising dashboard -->
     <string name="about_settings_title">About Us</string>
-    <string name="about_settings_summary">Information about RisingOS</string>
+    <string name="spoofing_summary">Get more features RisingOS</string>
     <string name="buttons_settings_title">Buttons</string>
     <string name="buttons_settings_summary">Tweak hardware buttons</string>
     <string name="lockscreen_settings_title">Lockscreen</string>
@@ -1220,6 +1206,10 @@
     <!-- Netflix Spoof -->
     <string name="netflix_spoof_title">Netflix spoof</string>
     <string name="netflix_spoof_summary">Spoof your device as different model for Netflix</string>
+
+    <!-- Spoof all apps -->
+    <string name="spoof_all_title">Spoof All apps</string>
+    <string name="spoof_all_summary">Spoof all possible apps as Pixel XL for misc benefits (samsung accesories, cts pass etc)</string>
 
     <!-- Captive portal -->
     <string name="captive_portal_title">Connectivity check</string>

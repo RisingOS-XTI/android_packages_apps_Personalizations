@@ -22,14 +22,6 @@
 
     <PreferenceCategory
         android:title="@string/misc_general_settings_title">
-        
-    <!-- Spoof -->
-        <Preference
-            android:key="spoofing"
-            android:icon="@drawable/ic_google"
-            android:title="@string/spoofing_title"
-            android:fragment="com.rising.settings.fragments.misc.Spoof"
-            app:position="top"/>
 
     <!-- Gaming mode -->
     <com.rising.settings.preferences.AdaptivePreference
@@ -37,7 +29,7 @@
         android:icon="@drawable/ic_gaming"
         android:title="@string/gaming_mode_title"
         android:summary="@string/gaming_mode_summary"
-        app:position="middle">
+        app:position="top">
 
         <intent
             android:action="android.intent.action.MAIN"
@@ -90,12 +82,7 @@
         android:title="@string/qs_weather_settings_title"
         android:summary="@string/qs_weather_settings_summary"
         android:fragment="com.rising.settings.fragments.misc.OmniJawsSettings"
-        app:position="bottom" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:title="@string/misc_other_settings_title">
+        app:position="middle" />
 
     <!-- Floating rotation button -->
     <com.rising.settings.preferences.SystemSettingSwitchPreference
@@ -104,7 +91,7 @@
         android:title="@string/floating_rotation_button_title"
         android:summary="@string/floating_rotation_button_summary"
         android:defaultValue="true"
-        app:position="top" />
+        app:position="middle" />
 
     <com.rising.settings.preferences.SecureSettingListPreference
         android:key="navbar_layout_views"
@@ -141,28 +128,6 @@
         android:entryValues="@array/screen_off_animation_values"
         android:defaultValue="0"
         app:position="middle" />
-
-    <com.rising.settings.preferences.SystemSettingSwitchPreference
-         android:key="cache_cleaner_enabled"
-         android:title="@string/cache_cleaner_title"
-         android:summary="@string/cache_cleaner_summary"
-         android:defaultValue="false"
-         app:position="middle" />
-
-    <com.rising.settings.preferences.GlobalSettingSwitchPreference
-        android:key="pm_downgrade_allowed"
-        android:title="@string/miscellaneous_app_downgrade_title"
-        android:summary="@string/miscellaneous_app_downgrade_summary"
-        app:position="middle"
-        android:defaultValue="false" />
-
-    <!-- Unlimit screenrecord -->
-    <com.rising.settings.preferences.SystemSettingSwitchPreference
-        android:key="unlimit_screenrecord"
-        android:title="@string/miscellaneous_unlimit_screenrecord_title"
-        android:summary="@string/miscellaneous_unlimit_screenrecord_summary"
-        app:position="middle"
-        android:defaultValue="false" />
 
     <!-- Three-fingers-swipe to screenshot -->
     <com.rising.settings.preferences.SystemSettingSwitchPreference
