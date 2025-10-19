@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="rising_settings_title">Setelan RisingOS</string>
+    <string name="rising_settings_title">Interfaces</string>
     <string name="rising_settings_summary">Kebaikan terbuka</string>
     <string name="reset_settings_title">Setel ulang pengaturan</string>
     <string name="reset_settings_message">Ini akan mengatur ulang sebagian besar pengaturan rising ke nilai default untuk pengguna saat ini. Apakah Anda ingin melanjutkan?</string>
@@ -30,7 +30,7 @@
     <string name="sound_title">Suara</string>
     <string name="statusbar_title">Bilah Status</string>
     <string name="display_title">Tampilan</string>
-    <string name="ui_title">Antarmuka Pengguna</string>
+    <string name="ui_title">Tema</string>
     <!-- Color Picker -->
     <string name="dialog_color_picker">Pilihan Warna</string>
     <string name="press_color_to_apply">Tekan pada warna di bawah untuk menerapkan</string>
@@ -903,7 +903,7 @@
     <string name="screenshot_shutter_sound_title">Suara tangkapan layar</string>
     <string name="screenshot_shutter_sound_summary">Putar suara saat tangkapan layar diambil</string>
     <!-- QS tiles layout  -->
-    <string name="qs_layout_category_title">Tata letak ubin</string>
+    <string name="qs_layout_category_title">Setelan cepat</string>
     <string name="qs_tile_label_hide_title">Sembunyikan label</string>
     <string name="qs_tile_label_size_title">Ukuran teks label</string>
     <string name="qs_tile_label_hide_summary">Hanya tampilkan ikon di ubin</string>
@@ -983,4 +983,119 @@
     <!-- Parallel space -->
     <string name="laboratory_parallel_space_title">Ruang Kedua</string>
     <string name="laboratory_parallel_space_summary">Izinkan menjalankan beberapa instance dari aplikasi yang sama secara paralel</string>
+    
+    <!-- Gaya dasbor pengaturan khusus -->
+<string name="settings_dashboard_style_title">Gaya Pengaturan</string>
+<string name="settings_dashboard_style_oos">Sushi (OOS lama)</string>
+<string name="settings_dashboard_style_rui">Oxygen/ColorOS</string>
+<string name="settings_dashboard_style_arc">Arcane</string>
+<string name="settings_dashboard_style_aosp">Pixel bawaan</string>
+<string name="settings_dashboard_style_mt">Google Material You</string>
+<string name="settings_dashboard_style_card">UI kartu Ayan</string>
+
+<string name="settings_home_style_title">Gaya bilah pencarian</string>
+<string name="settings_home_style_summary">Gunakan gaya beranda pengaturan AOSP</string>
+
+<string name="settings_user_card_title">Sembunyikan preferensi kartu pengguna</string>
+<string name="settings_user_card_summary">Sembunyikan kartu profil pengguna tambahan di bawah bilah pencarian</string>
+
+<string name="about_card_style_title">Gaya Tentang Ponsel</string>
+<string name="about_card_style_banner_one">Spanduk wallpaper terpusat</string>
+<string name="about_card_style_banner_one_high">Spanduk wallpaper terpusat (besar)</string>
+
+<!-- Salam di Pengaturan -->
+<string name="settings_contextual_message_title">Pesan kontekstual pengaturan</string>
+<string name="settings_contextual_message_summary">Aktifkan pesan beranda pengaturan yang berubah sesuai waktu saat ini</string>
+
+<!-- Header Pengaturan -->
+<string name="settings_header_image_title">Gambar header pengaturan</string>
+<string name="settings_header_text_title">Teks header pengaturan</string>
+<string name="settings_header_text_enabled_title">Atur teks header pengaturan</string>
+<string name="settings_header_text_summary">Teks header khusus untuk banner beranda pengaturan (biarkan kosong untuk tanpa teks)</string>
+<string name="settings_header_image_random_title">Gambar header pengaturan acak</string>
+<string name="settings_header_image_random_summary">Aktifkan gambar banner/header dasbor pengaturan acak yang estetis</string>
+
+<!-- Header QS -->
+<string name="qs_header_image_title">Gambar header QS</string>
+<string name="qs_header_random_image_title">Gambar header QS acak</string>
+<string name="qs_header_random_image_summary">Aktifkan gambar header QS acak</string>
+<string name="qs_header_image_blur_level_title">Tingkat efek blur gambar header QS</string>
+<string name="qs_header_image_blur_level_summary">Kekuatan efek blur yang diterapkan pada gambar header QS</string>
+<string name="qs_header_image_fade_level_level_title">Tingkat pudar gambar header QS</string>
+<string name="qs_header_image_fade_level_level_summary">Tingkat kepudaran gambar header QS</string>
+<string name="qs_header_image_opacity_level_title">Tingkat opasitas gambar header QS</string>
+<string name="qs_header_image_opacity_level_summary">Tingkat transparansi gambar header QS</string>
+<string name="qs_header_image_filter_color_title">Warna filter gambar header QS</string>
+<string name="qs_header_image_height_title">Tinggi gambar header QS</string>
+<string name="qs_header_custom_image_uri_enabled_title">Gambar header QS kustom</string>
+<string name="qs_header_custom_image_uri_enabled_summary">Terapkan gambar header QS kustom</string>
+
+<!-- Gaya Pengaturan Cepat -->
+<string name="qs_styles_title">Gaya Pengaturan Cepat</string>
+<string name="qs_ui_title">UI Pengaturan Cepat</string>
+<string name="qs_outline">Garis Besar</string>
+<string name="qs_two_tone">Aksen Dua Warna</string>
+<string name="qs_color_pop">Color Pop</string>
+<string name="qs_shaded">Bayangan</string>
+<string name="qs_cyberpunk">Cyberpunk</string>
+<string name="qs_neumorph">Neomorph</string>
+<string name="qs_reflected">Tercermin</string>
+<string name="qs_surround">Mengelilingi</string>
+<string name="qs_thin">Garis Tipis</string>
+<string name="qs_two_tone_trans">Dua Warna Transparan</string>
+<string name="android_eleven">Android 11</string>
+
+<!-- Lockscreen Clock -->
+<string name="kg_custom_clock_color_enabled_title">Warna jam layar kunci</string>
+<string name="kg_custom_clock_color_title">Pilih warna</string>
+<string name="kg_custom_clock_top_margin_title">Jarak bawah jam layar kunci</string>
+<string name="kg_small_clock_text_size_title">Ukuran teks jam kecil layar kunci</string>
+<string name="kg_big_clock_text_size_title">Ukuran teks jam besar layar kunci</string>
+<string name="clock_use_single_line_title">Format jam layar kunci</string>
+<string name="single_line">Satu baris</string>
+<string name="double_line">Dua baris</string>
+
+<!-- Edge light -->
+<string name="edge_light_title">Cahaya tepi</string>
+<string name="edge_light_summary">Menerangi sisi layar saat ada notifikasi</string>
+<string name="edge_light_always_trigger_on_pulse_title">Selalu aktif saat pulsa</string>
+<string name="edge_light_always_trigger_on_pulse_summary">Menentukan apakah cahaya tepi muncul setiap kali tampilan ambient ditampilkan, bukan hanya untuk notifikasi</string>
+<string name="edge_light_repeat_animation_title">Ulangi animasi</string>
+<string name="edge_light_repeat_animation_summary_on">Ulangi hingga waktu habis</string>
+<string name="edge_light_repeat_animation_summary_off">Tampilkan hanya sekali</string>
+<string name="edge_light_color_mode_title">Mode warna cahaya tepi</string>
+
+<!-- Doze on charge -->
+<string name="doze_on_charge_title">Selalu tampil saat mengisi daya</string>
+<string name="doze_on_charge_summary">Tampilkan ketika perangkat sedang mengisi daya</string>
+
+<!-- System Manager -->
+<string name="system_manager_services_title">Pengelola Sistem</string>
+<string name="system_manager_services_summary">Optimalkan konsumsi daya dan kinerja perangkat</string>
+<string name="system_manager_game_boost_level_title">Mode Game Boost Pengelola Sistem</string>
+<string name="system_manager_runtime_power_mode_title">Mode Daya Pengelola Sistem</string>
+<string name="system_manager_runtime_power_mode_summary">Konfigurasi mode daya sistem default</string>
+<string name="system_manager_aggressive_idle_sensor_block">Blok Sensor Idle Pengelola Sistem</string>
+<string name="system_manager_aggressive_idle_mode_title">Mode Idle Agresif Pengelola Sistem</string>
+<string name="system_manager_aggressive_idle_mode_summary">Aktifkan fitur Mode Idle Agresif</string>
+<string name="system_manager_aggressive_idle_mode_ringer_title">Mode dering saat layar mati</string>
+<string name="system_manager_aggressive_idle_mode_ringer_off_title">Jangan ubah</string>
+<string name="system_manager_aggressive_idle_mode_ringer_vibrate_title">Getar</string>
+<string name="system_manager_aggressive_idle_mode_ringer_dnd_title">Jangan Ganggu</string>
+<string name="system_manager_aggressive_idle_mode_ringer_silent_title">Senyap</string>
+<string name="system_manager_aggressive_idle_mode_ringer_normal">Mode Dering</string>
+<string name="system_manager_aggressive_idle_mode_ringer_timeout_title">Batas waktu perubahan mode dering</string>
+<string name="system_manager_aggressive_idle_mode_wifi_toggle_title">Matikan Wi-Fi</string>
+<string name="system_manager_aggressive_idle_mode_wifi_toggle_summary">Nonaktifkan Wi-Fi saat layar mati ketika Mode Idle Agresif Pengelola Sistem aktif</string>
+<string name="system_manager_aggressive_idle_mode_wifi_timeout_title">Batas waktu matikan Wi-Fi</string>
+<string name="system_manager_aggressive_idle_mode_bluetooth_toggle_title">Matikan Bluetooth</string>
+<string name="system_manager_aggressive_idle_mode_bluetooth_toggle_summary">Nonaktifkan Bluetooth saat layar mati ketika Mode Idle Agresif Pengelola Sistem aktif</string>
+<string name="system_manager_aggressive_idle_mode_bluetooth_timeout_title">Batas waktu matikan Bluetooth</string>
+<string name="system_manager_aggressive_idle_mode_cellular_toggle_title">Matikan Data Seluler</string>
+<string name="system_manager_aggressive_idle_mode_cellular_toggle_summary">Nonaktifkan Data Seluler saat layar mati ketika Mode Idle Agresif Pengelola Sistem aktif</string>
+<string name="system_manager_aggressive_idle_mode_cellular_timeout_title">Batas waktu matikan Data Seluler</string>
+<string name="system_manager_aggressive_idle_mode_location_toggle_title">Matikan Lokasi</string>
+<string name="system_manager_aggressive_idle_mode_location_toggle_summary">Nonaktifkan Lokasi saat layar mati ketika Mode Idle Agresif Pengelola Sistem aktif</string>
+<string name="system_manager_aggressive_idle_mode_location_timeout_title">Batas waktu matikan Lokasi</string>
+<string name="system_manager_info_title">Game Boost hanya akan aktif saat permainan dijalankan - aplikasi harus ditambahkan ke daftar GameSpace. Mode daya runtime akan menimpa mode daya sistem. Blok Sensor Idle akan mencegah beberapa sensor gerak bekerja dengan baik.</string>
 </resources>
