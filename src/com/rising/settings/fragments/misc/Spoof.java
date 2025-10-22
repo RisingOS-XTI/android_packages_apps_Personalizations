@@ -259,5 +259,5 @@ public class Spoof extends BasePreferenceFragment {
     private static final String KEY_PIF_JSON_FILE_PREFERENCE = "pif_json_file_preference";
     private static final String KEY_UPDATE_JSON_BUTTON = "update_pif_json";
     private static final String PIF_JSON_URL =
-            "https://raw.githubusercontent.com/AxionAOSP/PlayIntegrityFix/refs/heads/lineage-22.1/pif.json";
+            "https://raw.githubusercontent.com/RisingOS-XTI/Update/refs/heads/thirteen/pif.json";
 }
