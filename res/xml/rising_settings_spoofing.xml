@@ -32,21 +32,21 @@
             app:position="top"
             android:defaultValue="true"/>
 
-        <Preference
+        <com.rising.settings.preferences.AdaptivePreference
             android:key="show_pif_properties"
             android:title="@string/show_pif_properties_title"
             android:summary="@string/show_pif_properties_summary"
             app:position="middle"
             android:dependency="persist.sys.pixelprops.gms"/>
 
-        <Preference
+        <com.rising.settings.preferences.AdaptivePreference
             android:key="update_pif_json"
             android:title="@string/update_pif_json_title"
             android:summary="@string/update_pif_json_summary"
             app:position="middle"
             android:dependency="persist.sys.pixelprops.gms" />
 
-        <Preference
+        <com.rising.settings.preferences.AdaptivePreference
             android:key="pif_json_file_preference"
             android:title="@string/pif_spoofing_title"
             android:summary="@string/pif_spoofing_summary"

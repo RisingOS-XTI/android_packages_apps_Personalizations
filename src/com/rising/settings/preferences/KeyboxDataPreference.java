@@ -2,6 +2,7 @@ package com.rising.settings.preferences;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.TypedArray;
 import android.net.Uri;
 import android.provider.Settings;
 import android.util.AttributeSet;
@@ -46,9 +47,53 @@ public class KeyboxDataPreference extends Preference {
 
     private ActivityResultLauncher<Intent> filePickerLauncher;
 
+    // Position enum from AdaptivePreference
+    private Position position;
+
+    public KeyboxDataPreference(Context context) {
+        super(context);
+        init(context, null);
+        setLayoutResource(R.layout.keybox_data_pref);
+    }
+
     public KeyboxDataPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
+        init(context, attrs);
         setLayoutResource(R.layout.keybox_data_pref);
+    }
+
+    public KeyboxDataPreference(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        init(context, attrs);
+        setLayoutResource(R.layout.keybox_data_pref);
+    }
+
+    private void init(Context context, AttributeSet attrs) {
+        position = getPosition(context, attrs);
+        if (position != null) {
+            int layoutResId = getLayoutResourceId(position);
+            setLayoutResource(layoutResId);
+        }
+    }
+
+    private Position getPosition(Context context, AttributeSet attrs) {
+        if (attrs == null) return null;
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.AdaptivePreference);
+        String positionAttribute = typedArray.getString(R.styleable.AdaptivePreference_position);
+        typedArray.recycle();
+        return Position.fromAttribute(positionAttribute);
+    }
+
+    private int getLayoutResourceId(Position position) {
+        switch (position) {
+            case TOP:
+                return R.layout.arc_card_about_top;
+            case BOTTOM:
+                return R.layout.arc_card_about_bottom;
+            case MIDDLE:
+            default:
+                return R.layout.arc_card_about_middle;
+        }
     }
 
     public void setFilePickerLauncher(ActivityResultLauncher<Intent> launcher) {
@@ -201,7 +246,6 @@ public class KeyboxDataPreference extends Preference {
         Toast.makeText(getContext(), getContext().getString(resId), Toast.LENGTH_SHORT).show();
     }
 
-    // Data class for Keybox
     private static class Keybox {
         public final String algorithm;
         public final String privateKey;
@@ -211,6 +255,26 @@ public class KeyboxDataPreference extends Preference {
             this.algorithm = algorithm;
             this.privateKey = privateKey;
             this.certificates = certificates;
+        }
+    }
+
+    private enum Position {
+        TOP,
+        MIDDLE,
+        BOTTOM;
+
+        public static Position fromAttribute(String attribute) {
+            if (attribute != null) {
+                switch (attribute.toLowerCase()) {
+                    case "top":
+                        return TOP;
+                    case "bottom":
+                        return BOTTOM;
+                    case "middle":
+                        return MIDDLE;
+                }
+            }
+            return null;
         }
     }
 }
